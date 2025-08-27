@@ -1,0 +1,226 @@
+:root {
+  --primary: #43a4ff;
+  --accent: #fbc531;
+  --dark: #222e3c;
+  --background: linear-gradient(135deg, #f6fafd 0%, #e9f5ff 100%);
+  --card-bg: #fff;
+  --card-shadow: 0 4px 16px rgba(67,164,255,0.09);
+  --radius: 18px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Poppins', Arial, sans-serif;
+  background: var(--background);
+  color: var(--dark);
+}
+header {
+  background: var(--primary);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.2em 0 1em 0;
+  box-shadow: 0 2px 8px rgba(67,164,255,0.07);
+}
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+#logo {
+  height: 48px;
+  filter: drop-shadow(0 2px 6px #222e3c22);
+}
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+nav {
+  margin-top: 0.8em;
+  display: flex;
+  gap: 2em;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.08em;
+  font-weight: 500;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+nav a:hover {
+  color: var(--accent);
+}
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+main {
+  max-width: 950px;
+  margin: 2.5em auto 3.5em auto;
+  padding: 1em;
+}
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--card-shadow);
+  margin-bottom: 2em;
+  padding: 2em 1.3em;
+  animation: fadeIn 1s;
+}
+.card h2 {
+  margin-top: 0;
+  color: var(--primary);
+  font-size: 1.5em;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+#metrics {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+.metric {
+  background: linear-gradient(120deg, #c8e6ff 80%, #f6fafd 100%);
+  border-radius: 12px;
+  padding: 1.1em 2.2em;
+  min-width: 150px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(67,164,255,0.07);
+  transition: transform 0.2s;
+}
+.metric:hover {
+  transform: translateY(-4px) scale(1.04);
+}
+.metric-value {
+  font-size: 2.2em;
+  font-weight: bold;
+  color: var(--accent);
+}
+.metric-label {
+  font-size: 1em;
+  color: #444;
+  margin-top: 0.2em;
+}
+#insights-content ul {
+  margin: 1em 0 0 0;
+  padding-left: 1.2em;
+}
+#insights-content li {
+  margin-bottom: 0.6em;
+  font-size: 1.13em;
+  padding-left: 0.2em;
+  line-height: 1.5;
+  color: #1c6c45;
+  position: relative;
+}
+#insights-content li:before {
+  content: "💡";
+  position: absolute;
+  left: -1.2em;
+}
+#generate-content {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8em 1.8em;
+  font-size: 1.12em;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s, box-shadow 0.2s;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 8px #43a4ff22;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+#generate-content:hover {
+  background: var(--accent);
+  color: var(--dark);
+}
+#content-output {
+  margin-top: 1em;
+  background: #fdf6e7;
+  border-radius: 8px;
+  padding: 1em;
+  font-size: 1.08em;
+  color: #7c3c21;
+  box-shadow: 0 1px 4px #fbc53122;
+}
+.highlight {
+  background: #fbc53144;
+  padding: 0.2em 0.6em;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #a35d00;
+}
+.cta {
+  display: inline-block;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.6em 1.4em;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 1em;
+  transition: background 0.2s, color 0.2s;
+}
+.cta:hover {
+  background: var(--accent);
+  color: var(--dark);
+}
+footer {
+  text-align: center;
+  padding: 1.1em;
+  background: var(--primary);
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  letter-spacing: 1px;
+  box-shadow: 0 -2px 8px rgba(67,164,255,0.04);
+  font-size: 1.08em;
+}
+@media (max-width: 650px) {
+  main {
+    padding: 0.2em;
+  }
+  #metrics {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .card {
+    padding: 1em;
+  }
+  nav {
+    gap: 1em;
+    font-size: 1em;
+  }
+  .metric {
+    min-width: 120px;
+    padding: 1em;
+  }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
