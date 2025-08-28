@@ -1,0 +1,102 @@
+[CONTRIBUTING.md](https://github.com/user-attachments/files/22028302/CONTRIBUTING.md)
+# Contributing to SmartGrowth AI
+
+Thank you for your interest in contributing to SmartGrowth AI! We welcome contributions from developers, designers, and domain experts. This document will help you get started and understand our collaboration workflow.
+
+---
+
+## Table of Contents
+- [How to Contribute](#how-to-contribute)
+- [Code of Conduct](#code-of-conduct)
+- [Project Structure](#project-structure)
+- [Setting Up Your Environment](#setting-up-your-environment)
+- [Branching and Workflow](#branching-and-workflow)
+- [Submitting Changes](#submitting-changes)
+- [Reporting Issues](#reporting-issues)
+- [Style Guide](#style-guide)
+- [Contact](#contact)
+
+---
+
+## How to Contribute
+
+1. **Fork the repository** and clone your fork locally.
+2. **Create a new branch** for your feature or fix.
+3. **Make your changes** following our style guidelines.
+4. **Commit your changes** with clear, descriptive messages.
+5. **Push your branch** to GitHub.
+6. **Open a Pull Request (PR)** with a detailed description of your changes.
+
+---
+
+## Code of Conduct
+
+Please be respectful and constructive. We follow the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
+
+---
+
+## Project Structure
+
+- `index.html` – Main application page
+- `styles.css` – Application styles
+- `app.js` – Client-side logic
+- `assets/` – Images and icons (put your logo here as `logo.png`)
+- Microservices and backend code will be in their respective repositories
+
+---
+
+## Setting Up Your Environment
+
+1. Clone your fork:
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/smartgrowth-ai.git
+   cd smartgrowth-ai
+   ```
+2. Install any dependencies (if applicable).
+3. Place your logo in `assets/logo.png`.
+4. Open `index.html` in your browser to preview changes.
+
+---
+
+## Branching and Workflow
+
+- Use [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow):
+  - Branch from `main` for each feature, fix, or documentation update.
+  - Name branches descriptively: `feature/dashboard-metrics`, `bugfix/login-error`, etc.
+  - Submit PRs to merge your branch into `main`.
+  - PRs require review by another contributor.
+
+---
+
+## Submitting Changes
+
+- Open a Pull Request (PR) describing your changes, related issues, and any special notes.
+- Ensure your code passes all automated checks.
+- Be ready to discuss and revise your code based on feedback.
+
+---
+
+## Reporting Issues
+
+- Use the [Issues](https://github.com/kng0111/smartgrowth-ai/issues) tab for bug reports, feature requests, or questions.
+- Please provide clear steps to reproduce bugs, screenshots if helpful, and your environment details.
+
+---
+
+## Style Guide
+
+- Use clear, descriptive commit messages.
+- Write clean, readable code and comments.
+- Follow web standards for HTML, CSS, and JavaScript.
+- Use semantic HTML and accessible design principles.
+
+---
+
+## Contact
+
+- For questions, open an issue or start a discussion.
+- For urgent matters, email the repository maintainer at the address on their GitHub profile.
+
+---
+
+*We are excited to build SmartGrowth AI together!*
