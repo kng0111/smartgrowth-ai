@@ -1,0 +1,7 @@
+# This file tells Git which files to ignore.
+# Files listed here will not be tracked or committed to your repository.
+
+# ...other ignored files (e.g., node_modules, .DS_Store)
+
+# Ignore local environment variables file
+.env.local
