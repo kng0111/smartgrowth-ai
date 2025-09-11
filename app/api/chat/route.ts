@@ -21,7 +21,7 @@ export async function POST(req: Request) {
       try {
         const response = await streamText({
           model: openai.chat.completions.create({
-            model: "gpt-4o-mini",
+            model: "gpt-3.5-mini",
             messages,
             stream: true,
           }),
@@ -50,7 +50,7 @@ export async function POST(req: Request) {
         if (openai) {
           const response = await streamText({
             model: openai.chat.completions.create({
-              model: "gpt-4o-mini",
+              model: "gpt-3.5-mini",
               messages,
               stream: true,
             }),
