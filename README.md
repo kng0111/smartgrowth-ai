@@ -1,4 +1,4 @@
-# 🌱 SmartGrowth AI – Marketing SaaS Platform
+# SmartGrowth AI – Marketing SaaS Platform
 
 SmartGrowth AI is a **next-generation Marketing SaaS tool** that combines **OpenAI** and **Google Gemini** to deliver world-class predictive insights, campaign optimization, and fraud-free growth for businesses of all sizes.  
 
